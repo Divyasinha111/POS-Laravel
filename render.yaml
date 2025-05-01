@@ -3,13 +3,13 @@ services:
     name: laravel-app
     env: php
     buildCommand: "composer install && php artisan migrate --force"
-    startCommand: "php artisan serve --host 0.0.0.0 --port 10000"
+    startCommand: "php -S 0.0.0.0:10000 -t public"
     plan: free
     envVars:
       - key: APP_ENV
         value: production
       - key: APP_KEY
-        value: # You will generate this later
+        value: # You will generate this after the first deploy
       - key: DB_CONNECTION
         value: mysql
       - key: DB_HOST
@@ -22,3 +22,4 @@ services:
         value: your-db-user
       - key: DB_PASSWORD
         value: your-db-password
+
