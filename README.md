@@ -33,7 +33,7 @@ A fully functional Point of Sale (POS) and Inventory Management System built wit
 ### 1. Clone the Repository
 
 bash
-1. git clone https://github.com/yourusername/pos-laravel.git
+1. git clone https://github.com/Divyasinha111/POS-Laravel
 cd pos-laravel
 
 2. Install PHP Dependencies
